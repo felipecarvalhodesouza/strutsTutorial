@@ -7,16 +7,23 @@ import basic_struts.model.MessageStore;
 public class HelloWorldAction extends ActionSupport {
 	private static final long serialVersionUID = 1L;
 	
+	private static int helloCount = 0;
+	
 	private MessageStore messageStore;
-
+	
     public String execute() {
         messageStore = new MessageStore() ;
+        helloCount++;
         
         return SUCCESS;
     }
 
     public MessageStore getMessageStore() {
         return messageStore;
+    }
+	
+    public int getHelloCount() {
+        return helloCount;
     }
     
     /*
