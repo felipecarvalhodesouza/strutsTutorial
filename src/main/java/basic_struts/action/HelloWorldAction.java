@@ -11,8 +11,33 @@ public class HelloWorldAction extends ActionSupport {
 	
 	private MessageStore messageStore;
 	
+	private String userName;
+
+	public String getUserName() {
+	    return userName;
+	}
+	
+	/**
+	 * O Struts 2 automaticamente chama o método setter de username
+	 * quando existe um parâmetro no submit com o mesmo nome
+	 * (no padrão JavaBeans). No exemplo do tutorial, tanto o string
+	 * param como o submit chamarão esse cara, e os colocarão na 
+	 * message da MessageStore
+	 * @param userName
+	 * 
+	 */
+
+	public void setUserName(String userName) {
+	    this.userName = userName;
+	}
+	
     public String execute() {
         messageStore = new MessageStore() ;
+        
+        if (userName != null) {
+            messageStore.setMessage( messageStore.getMessage() + " " + userName);
+        }
+        
         helloCount++;
         
         return SUCCESS;
