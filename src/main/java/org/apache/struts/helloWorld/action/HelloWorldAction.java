@@ -1,8 +1,8 @@
-package basic_struts.action;
+package org.apache.struts.helloWorld.action;
+
+import org.apache.struts.helloWorld.model.model.MessageStore;
 
 import com.opensymphony.xwork2.ActionSupport;
-
-import basic_struts.model.MessageStore;
 
 public class HelloWorldAction extends ActionSupport {
 	private static final long serialVersionUID = 1L;

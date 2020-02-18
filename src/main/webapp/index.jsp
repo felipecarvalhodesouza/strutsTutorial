@@ -29,6 +29,12 @@
 		<s:submit value="Submit" />
 	</s:form>
 	
-	<p><a href="register.jsp">Please register</a> for our prize drawing.</p>
+	<%--<p><a href="register.jsp">Please register</a> for our prize drawing.</p>--%>
+	 <s:url action="registerInput" var="registerInputLink" />
+	 <p><s:a href="%{registerInputLink}">Please register</s:a> for our prize drawing.</p>
+	 
+	<hr />
+	<s:text name="contact" />
+	
 </body>
 </html>

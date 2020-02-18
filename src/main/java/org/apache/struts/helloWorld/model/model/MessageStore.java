@@ -1,4 +1,4 @@
-package basic_struts.model;
+package org.apache.struts.helloWorld.model.model;
 
 public class MessageStore {
 	

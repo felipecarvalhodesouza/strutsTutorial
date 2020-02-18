@@ -1,4 +1,4 @@
-package register.model;
+package org.apache.struts.register.model;
 
 public class Person {
 	
