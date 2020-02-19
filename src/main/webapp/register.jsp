@@ -15,12 +15,13 @@
       <s:textfield name="personBean.lastName" label="Last name" />
       <s:textfield name="personBean.email"  label ="Email"/>  
       <s:textfield name="personBean.age"  label="Age"  /> --%>
-     <s:form action="register">
+     
 	     <s:textfield key="personBean.firstName"  />
 	     <s:textfield key="personBean.lastName"  /> 
 	     <s:textfield key="personBean.age"  /> 
 	     <s:textfield key="personBean.email"  /> 
-         <s:submit/>
+     <s:form action="register">
+     <s:submit/>
      </s:form>	
   </body>
   
